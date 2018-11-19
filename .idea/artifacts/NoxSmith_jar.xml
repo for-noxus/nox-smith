@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="NoxSmith:jar">
+    <output-path>$USER_HOME$/OSBot/Scripts</output-path>
+    <root id="archive" name="NoxSmith.jar">
+      <element id="module-output" name="NoxSmith" />
+      <element id="library" level="project" name="ScriptAPI" />
+    </root>
+  </artifact>
+</component>

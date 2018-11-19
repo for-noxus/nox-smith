@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ScriptAPI">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../ScriptAPI/out/production/ScriptAPI" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
