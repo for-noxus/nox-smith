@@ -11,7 +11,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class Painter implements org.osbot.rs07.canvas.paint.Painter {
+public class NoxSmithPaint implements org.osbot.rs07.canvas.paint.Painter {
     private final ScriptContext ctx;
 
     private final long startTime;
@@ -36,7 +36,7 @@ public class Painter implements org.osbot.rs07.canvas.paint.Painter {
     private final Font font1 = new Font("Arial", 0, 14);
     private final Font font2 = new Font("Arial", 0, 16);
 
-    public Painter(ScriptContext ctx) {
+    public NoxSmithPaint(ScriptContext ctx) {
         this.ctx = ctx;
         startTime = System.currentTimeMillis();
         ctx.getExperienceTracker().start(Skill.SMITHING);

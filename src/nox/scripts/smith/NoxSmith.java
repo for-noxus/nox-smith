@@ -5,8 +5,8 @@ import nox.scripts.smith.nodes.InteractWithEntity;
 import nox.scripts.smith.nodes.WalkToBank;
 import nox.scripts.smith.nodes.WalkToEntity;
 import nox.scripts.smith.nodes.WithdrawItems;
+import nox.scripts.smith.ui.NoxSmithPaint;
 import nox.scripts.smith.ui.NoxSmithUI;
-import nox.scripts.smith.ui.Painter;
 import org.osbot.rs07.api.map.Area;
 import org.osbot.rs07.api.ui.Message;
 import org.osbot.rs07.event.WebWalkEvent;
@@ -102,7 +102,7 @@ public class NoxSmith extends Script {
                 ui.setVisible(false);
                 ui.dispose();
                 ctx = new ScriptContext(this, ui.extractSettings());
-                getBot().addPainter(new Painter(ctx));
+                getBot().addPainter(new NoxSmithPaint(ctx));
                 initializeNodes();
             });
 
