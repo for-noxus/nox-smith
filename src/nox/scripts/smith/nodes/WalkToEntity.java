@@ -23,9 +23,10 @@ public class WalkToEntity extends OSBotNode {
     }
 
     @Override
-    public void execute() {
+    public int execute() {
         Position toWalk = ctx.getScriptSettings().getBankArea().getInteractionLocation();
 
         ctx.getWalking().walk(toWalk);
+        return 5;
     }
 }

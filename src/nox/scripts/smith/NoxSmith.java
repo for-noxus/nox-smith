@@ -1,10 +1,12 @@
 package nox.scripts.smith;
 
+import nox.api.graphscript.GraphScript;
 import nox.scripts.smith.core.*;
 import nox.scripts.smith.nodes.InteractWithEntity;
 import nox.scripts.smith.nodes.WalkToBank;
 import nox.scripts.smith.nodes.WalkToEntity;
 import nox.scripts.smith.nodes.WithdrawItems;
+import nox.scripts.smith.ui.NoxSmithMousePaint;
 import nox.scripts.smith.ui.NoxSmithPaint;
 import nox.scripts.smith.ui.NoxSmithUI;
 import org.osbot.rs07.api.map.Area;
@@ -20,8 +22,8 @@ import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@ScriptManifest(name = "NoxSmith", author = "Nox", version = 1.0, info = "", logo = "")
-public class NoxSmith extends Script {
+@ScriptManifest(name = "NoxSmith", author = "Nox", version = 1.0, info = "Smelts and smiths all bars/ores in most locations", logo = "")
+public class NoxSmith extends Script implements GraphScript {
 
     private ScriptContext ctx;
     private NoxSmithUI ui;
@@ -46,13 +48,14 @@ public class NoxSmith extends Script {
     }
 
     @Override
-    public int onLoop() throws InterruptedException {
+    public int onLoop() {
         if (ui != null && ui.isVisible()) {
             log("Awaiting GUI configuration..");
             NamedBankArea location = getUserLocationSettings();
-            SwingUtilities.invokeLater(() -> ui.setLocationValidationText(location, myPlayer().getPosition()));
+            SwingUtilities.invokeLater(() -> ui.setLocationValidationText(location, myPosition()));
             return 2001;
-        } else if (ctx != null){
+        }
+        if (ctx != null){
             if (ctx.getCurrentNode().isAborted()) {
                 log(String.format("Node %s requested script abortion.\nReason: %s", ctx.getCurrentNode().getClass().getSimpleName(), ctx.getCurrentNode().getAbortedReason()));
                 stop();
@@ -67,8 +70,7 @@ public class NoxSmith extends Script {
                     stop();
                 }
             }
-            ctx.getCurrentNode().execute();
-            log(ctx.getCurrentNode().getMessage());
+            return ctx.getCurrentNode().execute();
         }
         return 1001;
     }
@@ -85,7 +87,7 @@ public class NoxSmith extends Script {
 
     @Override
     public void onPaint(Graphics2D g) {
-        //This is where you will put your code for paint(s)
+        g.setRenderingHints(new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON));
     }
 
     private void initializeGui() {
@@ -103,6 +105,7 @@ public class NoxSmith extends Script {
                 ui.dispose();
                 ctx = new ScriptContext(this, ui.extractSettings());
                 getBot().addPainter(new NoxSmithPaint(ctx));
+                getBot().addPainter(new NoxSmithMousePaint(ctx));
                 initializeNodes();
             });
 
@@ -122,7 +125,7 @@ public class NoxSmith extends Script {
         }
     }
 
-    private void initializeNodes() {
+    public void initializeNodes() {
         OSBotNode interactWithEntity = new InteractWithEntity(null, ctx, "Interacting with entity");
         OSBotNode walkToEntity = new WalkToEntity(interactWithEntity, ctx, "Walking to entity");
         OSBotNode withdrawItems = new WithdrawItems(walkToEntity, ctx, "Withdrawing items");

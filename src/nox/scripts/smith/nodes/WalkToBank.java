@@ -25,7 +25,8 @@ public class WalkToBank extends OSBotNode {
     }
 
     @Override
-    public void execute() {
+    public int execute() {
         ctx.getWalking().walk(ctx.getScriptSettings().getBankArea().getArea());
+        return 5;
     }
 }

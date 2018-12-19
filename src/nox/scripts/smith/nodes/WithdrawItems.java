@@ -22,7 +22,7 @@ public class WithdrawItems extends OSBotNode {
     }
 
     @Override
-    public void execute() {
+    public int execute() {
 
         Bank bank = ctx.getBank();
         Bar metal = ctx.getScriptSettings().getMetal();
@@ -34,13 +34,13 @@ public class WithdrawItems extends OSBotNode {
                     if (metal.getOre2() != null) {
                         if (!bank.contains(metal.getOre2().getId()) || bank.getAmount(metal.getOre2().getId()) < metal.getOre2Amount()) {
                             this.abort("We're all out of " + metal.getOre2().getFriendlyName());
-                            return;
+                            return 5;
                         }
                         bank.withdraw(metal.getOre2().getId(), metal.getOre2WithdrawalAmount());
                     }
                     if (!bank.contains(metal.getOre1().getId()) || bank.getAmount(metal.getOre1().getId()) <  metal.getOre1Amount() ) {
                         this.abort("We're all out of " + metal.getOre1().getFriendlyName());
-                        return;
+                        return 5;
                     }
                     bank.withdrawAll(metal.getOre1().getId());
                 } else {
@@ -50,20 +50,21 @@ public class WithdrawItems extends OSBotNode {
                     if (!ctx.getInventory().contains(Constants.HAMMER_ID)) {
                         if (!bank.contains(Constants.HAMMER_ID)) {
                             abort("Unable to locate a hammer in the bank or in the inventory.");
-                            return;
+                            return 5;
                         }
                         bank.withdraw(Constants.HAMMER_ID, 1);
                     }
                     if (!bank.contains(metal.getId()) || bank.getAmount(metal.getId()) < ctx.getScriptSettings().getItemToSmith().getBarCount()) {
                         this.abort("We're all out of " + metal.getFriendlyName());
-                        return;
+                        return 5;
                     }
                     bank.withdrawAll(metal.getId());
                 }
             }
         } catch (InterruptedException e) {
             ctx.log("Error opening bank.");
-            return;
+            return 5;
         }
+        return 5;
     }
 }

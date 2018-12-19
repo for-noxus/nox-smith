@@ -1,21 +1,13 @@
 package nox.scripts.smith.nodes;
 
-import jdk.nashorn.internal.runtime.regexp.joni.ast.ConsAltNode;
-import nox.api.graphscript.Node;
 import nox.scripts.smith.core.Constants;
 import nox.scripts.smith.core.OSBotNode;
 import nox.scripts.smith.core.ScriptContext;
 import nox.scripts.smith.core.Sleep;
-import org.osbot.rs07.api.Widgets;
-import org.osbot.rs07.api.filter.Filter;
-import org.osbot.rs07.api.model.Item;
 import org.osbot.rs07.api.model.RS2Object;
 import org.osbot.rs07.api.ui.RS2Widget;
-import org.osbot.rs07.utility.ConditionalSleep;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
 
 public class InteractWithEntity extends OSBotNode {
 
@@ -37,7 +29,7 @@ public class InteractWithEntity extends OSBotNode {
     }
 
     @Override
-    public void execute() {
+    public int execute() {
         String entityName = ctx.getScriptSettings().getBankArea().isSmelting() ? "Furnace" : "Anvil";
 
         if (ctx.getDialogues().inDialogue()) {
@@ -48,11 +40,11 @@ public class InteractWithEntity extends OSBotNode {
             lastAnimationTime = System.currentTimeMillis();
 
         if (System.currentTimeMillis() - lastAnimationTime < 5000)
-            return;
+            return 5;
 
         if (ctx.getScriptSettings().getBankArea().isSmelting()) {
             if (ctx.getObjects().closest(entityName).interact("Smelt")) {
-                new Sleep(() -> ctx.getWidgets().get(Constants.WIDGET_SMELT_ROOT, Constants.WIDGET_SMELT_CHILD) != null, 5000, 200).sleep();
+                Sleep.until(() -> ctx.getWidgets().get(Constants.WIDGET_SMELT_ROOT, Constants.WIDGET_SMELT_CHILD) != null, 5000, 200);
 
                 ensureAllIsSelected();
 
@@ -65,7 +57,7 @@ public class InteractWithEntity extends OSBotNode {
             }
         } else {
             if (ctx.getObjects().closest(entityName).interact("Smith")) {
-                new Sleep(() -> ctx.getWidgets().getWidgets(Constants.WIDGET_SMITH_ROOT) != null, 5000, 200).sleep();
+                Sleep.until(() -> ctx.getWidgets().getWidgets(Constants.WIDGET_SMITH_ROOT) != null, 5000, 200);
 
                 RS2Widget smithWidget = Arrays.stream(ctx.getWidgets().getWidgets(Constants.WIDGET_SMITH_ROOT))
                         .filter(f -> Arrays.stream(f.getItems()).anyMatch(a -> a.getName().toLowerCase().contains(ctx.getScriptSettings().getItemToSmith().getFriendlyName().toLowerCase())))
@@ -80,6 +72,7 @@ public class InteractWithEntity extends OSBotNode {
                 }
             }
         }
+        return 5;
     }
 
     private void ensureAllIsSelected() {

@@ -24,7 +24,7 @@ public abstract class Node<k extends Node> {
 
     public abstract boolean isValid();
 
-    public abstract void execute();
+    public abstract int execute();
 
     public boolean isAborted() { return aborted; }
 
