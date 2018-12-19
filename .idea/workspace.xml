@@ -7,16 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6499b5c4-ba1f-4e36-86f4-1ec01325e979" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/NoxSmith_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/NoxSmith_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/OSBot_2_5_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ScriptAPI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/OSBot_2_5_27.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/OSBot_2_5_27.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NoxSmith/Hammer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NoxSmith/Options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NoxSmith/Superheat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/api/graphscript/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/api/graphscript/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/ui/Painter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,74 +29,53 @@
     <session id="76672373">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="12" />
+          <entry key="class" value="13" />
           <entry key="form" value="5" />
           <entry key="fxml" value="2" />
-          <entry key="java" value="85" />
+          <entry key="java" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="12" />
+          <entry key="CLASS" value="13" />
           <entry key="GUI_DESIGNER_FORM" value="5" />
-          <entry key="JAVA" value="85" />
+          <entry key="JAVA" value="107" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="form" value="6" />
-          <entry key="java" value="23698" />
+          <entry key="java" value="27033" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="6" />
-          <entry key="JAVA" value="23698" />
+          <entry key="JAVA" value="27033" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onPaint#0;class#NoxSmith#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithPaint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state>
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,48 +83,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/OSBotNode.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SleepDuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="80" selection-start-line="67" selection-start-column="80" selection-end-line="67" selection-end-column="80" />
+            <state relative-caret-position="153">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/tools/SleepGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="187">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/ScriptContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,20 +139,24 @@
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithUI.form" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/ScriptSettings.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Ore.java" />
-        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java" />
-        <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Bar.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/Constants.java" />
-        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/NamedBankAreas.java" />
-        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SmithItem.java" />
-        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/ScriptContext.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/ui/Painter.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithUI.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/OSBotNode.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithMousePaint.java" />
+        <option value="$PROJECT_DIR$/src/nox/api/graphscript/Node.java" />
         <option value="$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/tools/SleepGenerator.java" />
+        <option value="$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SleepDuration.java" />
       </list>
     </option>
   </component>
@@ -210,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -247,18 +210,28 @@
             </path>
             <path>
               <item name="NoxSmith" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoxSmith" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="nox" type="462c0819:PsiDirectoryNode" />
+              <item name="smith" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoxSmith" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="330" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ScriptAPI/src" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OSBot.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.16003387" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -274,11 +247,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UI Test">
+  <component name="RunManager" selected="Application.Sleep Generator">
     <configuration name="Debug" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.osbot.Boot" />
       <module name="NoxSmith" />
       <option name="VM_PARAMETERS" value="-debug" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sleep Generator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="nox.scripts.smith.tools.SleepGenerator" />
+      <module name="NoxSmith" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -290,10 +270,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OSBot.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/OSBot.jar" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Application.Sleep Generator" />
       <item itemvalue="Application.Debug" />
       <item itemvalue="Application.UI Test" />
+      <item itemvalue="JAR Application.OSBot.jar" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.OSBot.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -312,14 +303,14 @@
     <frame x="-8" y="-8" width="2576" height="1456" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22941646" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23421264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294753" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294753" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39969134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,7 +318,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.2808642" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.2808642" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980016" />
@@ -340,8 +332,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/OSBot 2.5.25.jar!/org/osbot/rs07/api/Bank.class" />
-    <entry file="jar://$PROJECT_DIR$/OSBot 2.5.25.jar!/org/osbot/rs07/script/Script.class" />
     <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/hk.java" />
     <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/g.fxml" />
     <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithUI.fxml" />
@@ -374,13 +364,7 @@
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/OSBot 2.5.25.jar!/org/osbot/rs07/script/MethodProvider.class" />
-    <entry file="jar://$PROJECT_DIR$/../ScriptAPI/ScriptAPI.jar!/nox/api/graphscript/GraphScript.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../ScriptAPI/ScriptAPI.jar!/nox/api/graphscript/GraphScript.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -426,13 +410,6 @@
     <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Ore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -448,27 +425,7 @@
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/OSBot 2.5.25.jar!/org/osbot/rs07/api/ui/RS2Widget.class" />
-    <entry file="jar://$PROJECT_DIR$/../ScriptAPI/ScriptAPI.jar!/nox/api/graphscript/Node.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../ScriptAPI/ScriptAPI.jar!/nox/api/graphscript/Node.class" />
     <entry file="jar://$PROJECT_DIR$/OSBot 2.5.27.jar!/org/osbot/rs07/api/Widgets.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -478,13 +435,6 @@
             <element signature="e#223144#223145#0" expanded="true" />
             <element signature="e#223197#223198#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Bar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -510,11 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,20 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SmithItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -556,38 +487,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java">
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SmithItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onPaint#0;class#NoxSmith#0" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithPaint.java">
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Ore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/OSBotNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+        <state relative-caret-position="323">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -603,22 +513,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/ScriptContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/Bar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Graphics2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="1029" column="25" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/OSBotNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithMousePaint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/api/graphscript/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/ui/NoxSmithPaint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/OSBot.jar!/org/osbot/rs07/utility/ConditionalSleep.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/Sleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="606" column="6" selection-start-line="606" selection-start-column="6" selection-end-line="606" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/InteractWithEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WalkToEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/nodes/WithdrawItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/NoxSmith.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/tools/SleepGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nox/scripts/smith/core/enums/SleepDuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -630,8 +664,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>NoxSmith:jar</last-edited>
@@ -695,7 +729,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>src</last-edited>
+          <last-edited>OSBot 2.5.27</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
